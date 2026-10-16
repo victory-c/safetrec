@@ -1,0 +1,28 @@
+# TIMS / SWITRS / CCRS crash extracts. Never commit these.
+data/raw/
+/Crashes.csv
+/Parties.csv
+/Victims.csv
+
+# Derived crash tables, geocoded points, and HTML maps with crash locations.
+data/processed/*.csv
+data/processed/*.geojson
+data/processed/*.graphml
+data/processed/*.xml
+data/processed/2026/
+data/processed/cache/
+!data/processed/acs_b08006_alameda_tracts.csv
+report/figures/**/*.html
+report/figures/**/*.png
+
+# OSM / local caches
+osmnx_cache/
+
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store
+*.egg-info/
+.pytest_cache/
+.gstack/
